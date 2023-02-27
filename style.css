@@ -1,0 +1,62 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-container{
+    flex-direction: row;
+}
+
+@media (max-width: 796px) {
+    .flex-container{
+        flex-direction: column;
+        display: block;
+    }
+
+    .flex-container div{
+        flex-basis: 85%;
+        margin-left: 15px;
+    }
+
+}
+
+#info{
+    margin-top: 10px;
+}
+
+p, span{
+    font-size: medium;
+}
+
+#email#linkedin
+{
+    color:#0000FF;
+}
+
+.container-fluid
+{
+    background-color: darkgreen;
+    color: whitesmoke;
+    padding: 0px;
+    margin: 0px;
+}
+
+.row{
+    direction: column;
+    display: flex;
+}
+
+.text-center{
+    border-bottom:5px solid darkgreen;
+}
+
+#boton{
+    height: 20x;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 4px;
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

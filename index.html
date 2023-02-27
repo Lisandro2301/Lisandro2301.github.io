@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion de Curriculum Vitae</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/OIP.d1H1ST20qGU6DnDFbED3iAHaHa?pid=ImgDet&rs=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/86ed56414a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <h1 class="text-center">Presentación Curriculum Vitae</h1>
+    </div>
+
+    
+    <div class="row">
+            <div class="col-1"></div>
+            
+            <div class="col-auto" id="imagen">
+                <img src="" id="foto" alt="Imagen ejemplo de CV"/>
+            </div>
+            
+            <div class="col-5">
+                <h1 class="text-dark" id="nombreApellido"></h1>
+                <h5 class="text-success">Desarrollador Front-End</h5>
+                <p>#C++, JS, HTML, CSS</p>
+            </div>
+    </div>
+    
+    <div class="flex-container">
+        <div class="row">
+            <div class="col-1"></div>
+            
+            <div class="col-3" id="contacto">
+                <h4 class="text-center">Contacto</h4>
+                <p> Teléfono: <span id="telefono"></span></p>
+                <p> Email: <a href="" id="email"></a>
+                <p> Linkedin: <a href="https://us.linkedin.com/ejemplo" id="linkedin">https://us.linkedin.com/ejemplo</a></p>
+            </div>
+            
+            <div class="col-3">
+                <h4 class="text-center">Habilidades:</h4>
+                <li>E-commerce</li><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                <li>HTML/CSS/JS</li><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                <li>C++</li><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+            </div>
+
+            <div class="col-4">
+                <h4 class="text-center">Experiencia laboral</h4>
+                <h5>Becario de informática, sistemas y red</h5>
+                <span>2019-2022, Desarrollos Web</span>
+                <p>Desarrollo web y mantenimiento del mismo realizado a mas de 15 clientes de diferentes paises.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="row">
+            <div class="col-1"></div>
+                
+            <div class="col-3" id="informacion_personal">
+                <h4 class="text-center">Información personal</h4>
+                <p>Nacionalidad: <span id="nacionalidad"> </span></p>
+                <p>Pais: <span id="pais"></span></p>
+                <p>Ciudad: <span id="ciudad"></span></p>
+                <p>Edad: <span id="edad"></span></p>
+                <p>Género: <span>Masculino</span></p>
+            </div>
+        
+            <div class="col-3" id="perfil">
+                <h4 class="text-center">Perfil</h4>
+                <span>Desarrollador web con mas de 3 años de experiencia en el ámbito laboral, apasionado por la tecnología y la implementacion de las mismas en el desarrollo de software.</span>
+                <p>Busco una bacante en este emprendimiento para aportar mi experiencia y conocimientos con el objetivo de impulsar la empresa.</p> 
+            </div>
+                
+            <div class="col-4" id="estudios">
+                <h4 class="text-center">Estudios</h4>
+                <h5>2007-2013, Bachiller en economía y administración.</h5>
+                <p>Especializado en administración de empresas y economía en un colegio privado de mi ciudad.</p>
+                <h5>2014-2019, Lic. en Ciencias de la computación.</h5>
+                <p>Especializado en ciencias de la informatica en una universidad de mi estado.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-3">
+                <h4 class="text-center">Información adicional</h4>
+                <div id="ad">
+                    <span>En mi tiempo libre me gusta informarme sobre los avances tecnológicos como el uso de las inteligencias artificiales en ámbitos laborales como el desarrollo de software. </span></p>
+                    <span>Me encuentro realizando cursos sobre los siguientes lengaujes:</span>
+                    <li>Golang</li>
+                    <li>Phyton</li>
+                    <li>Ruby</li>
+                </div>
+            </div>
+            <div class="col-5"></div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="d-flex justify-content-center col-3" id="info">        
+                <button type="button" id="boton">Mostrar Información</button>
+            </div>
+            <div class="col-5"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="pie">
+        <h5>ㅤ</h5>
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
+</html>
