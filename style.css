@@ -117,14 +117,13 @@ p, span{
 }
 
 form{
-    border-radius: 1em;
+    border-radius: 16px;
     border: 2px solid darkgreen;
-    padding: 1em;
+    padding: 16px;
 }
 
 textarea {
     vertical-align: top;
-    height: 5em;
 }
 
 input:focus,
