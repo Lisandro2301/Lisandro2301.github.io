@@ -1,20 +1,16 @@
-async function consulta()
+async function consulta_perfil()
 {
     let resultado = await fetch('https://randomuser.me/api/?nat=us&gender=male')
                           .then(response => response.json())
                           .then(data => data)
-    foto.src = resultado.results[0].picture.large
+    foto.src = resultado.results[0].picture.large;
     document.getElementById('nombreApellido').innerHTML = resultado.results[0].name.first+' '+resultado.results[0].name.last;
-    document.getElementById('telefono').innerHTML = resultado.results[0].phone;
-    document.getElementById('email').innerHTML = resultado.results[0].email;
-    email.href = resultado.results[0].email;
     document.getElementById('nacionalidad').innerHTML = resultado.results[0].nat;
     document.getElementById('pais').innerHTML = resultado.results[0].location.country;
     document.getElementById('ciudad').innerHTML = resultado.results[0].location.city;
     document.getElementById('edad').innerHTML = resultado.results[0].dob.age;
 }
-
-consulta();
+consulta_perfil();
 
 const texto=document.getElementById('ad');
 
